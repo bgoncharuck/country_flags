@@ -24,23 +24,6 @@ class CountryFlag extends StatelessWidget {
           borderRadius: borderRadius,
         );
 
-  /// Create an instance of [CountryFlag] based on a country code.
-  ///
-  /// {@macro country_flags}
-  CountryFlag.fromCountryCode(
-    String countryCode, {
-    Key? key,
-    double? height,
-    double? width,
-    double? borderRadius,
-  }) : this._(
-          key: key,
-          flagCode: FlagCode.fromCountryCode(countryCode.toUpperCase()),
-          height: height,
-          width: width,
-          borderRadius: borderRadius,
-        );
-
   /// {@macro country_flags}
   const CountryFlag._({
     super.key,
